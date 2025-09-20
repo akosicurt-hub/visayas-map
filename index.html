@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>KML Map - Offline PWA</title>
+    <style>
+      .custom-popup .leaflet-popup-content-wrapper {
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      
+      .custom-popup .leaflet-popup-content {
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      
+      .user-location-marker {
+        z-index: 1000 !important;
+      }
+      
+      .user-location-marker div {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
